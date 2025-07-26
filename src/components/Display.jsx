@@ -3,7 +3,7 @@ import Item from "./Item";
 
 const Display = (props) => {
   return (
-    <>
+    <div className="">
       {props.items.map((item, idx) => (
         <Item
           key={idx}
@@ -14,7 +14,7 @@ const Display = (props) => {
           onRemove={props.onRemove}
         ></Item>
       ))}
-    </>
+    </div>
   );
 };
 

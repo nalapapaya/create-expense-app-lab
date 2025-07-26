@@ -1,9 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+input {
+  width: 30rem;
 }
+.display{
+  display:flex;
+  justify-content: space-around;
+  gap:2rem;
+}
+
+.item-row {
+  display:flex;
+  gap:1rem;
+  align-items: center;
+}
+
+.container {
+  height: 15rem;
+  width: 50rem;
+  padding: 1rem;
+}
+
+.form-container {
+  height: 10rem;
+  width: 40rem;
+  padding-left: 3rem;
+  display:flex;
+  justify-content: space-between ;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  width: 10rem;
+}
+
+.submitBtn {
+  display: flex;
+  align-self: end;
+}
+
 
 .logo {
   height: 6em;

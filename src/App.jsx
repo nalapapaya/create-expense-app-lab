@@ -15,10 +15,10 @@ const App = () => {
     setItems((prevState) => prevState.filter((item, idx) => idx !== removeIdx));
   };
   return (
-    <>
+    <div className="container">
       <Form onAdd={addItem}></Form> {/*passing function to child*/}
       <Display items={items} onRemove={removeItem}></Display> {/*passing data to child*/}
-    </>
+    </div>
   );
 };
 

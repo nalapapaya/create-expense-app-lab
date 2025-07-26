@@ -22,18 +22,19 @@ const Form = (props) => {
     setDate("");
   };
   return (
-    <>
-      <Label htmlFor="item" className="col-md-8">
-        Item:
-      </Label>
-      <Input
-        id="item"
-        type="text"
-        value={item}
-        onChange={(event) => setItem(event.target.value)}
-        className="col-sm-10"
-      ></Input>
-      <div className="col-sm-12"></div>
+    <div className="form-container">
+      <div className="form-row">
+        <Label htmlFor="item">
+          Item:
+        </Label>
+        <Input
+          id="item"
+          type="text"
+          value={item}
+          onChange={(event) => setItem(event.target.value)}
+        ></Input>
+      </div>
+      <div className="form-row">
       <Label htmlFor="price">Price:</Label>
       <Input
         id="price"
@@ -41,7 +42,8 @@ const Form = (props) => {
         value={price}
         onChange={(event) => setPrice(event.target.value)}
       ></Input>
-      <div className="col-sm-12"></div>
+      </div>
+       <div className="form-row">
       <Label htmlFor="date">Date:</Label>
       <Input
         id="date"
@@ -49,11 +51,13 @@ const Form = (props) => {
         value={date}
         onChange={(event) => setDate(event.target.value)}
       ></Input>
-      <div className="col-sm-8"></div>
+      </div>
+      <div className="submitBtn">
       <Button className="submit col-sm-4" type="button" onClick={handleSubmit}>
         Submit
       </Button>
-    </>
+      </div>
+    </div>
   );
 };
 
